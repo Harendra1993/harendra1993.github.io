@@ -27,8 +27,8 @@ jobs:
         node-version: "10.x"
     - run: npm
     - run: |
-        git config --global user.email "test@test.com"
-        git config --global user.name "test"
+        git config --global user.email "harendraindia@gmail.com"
+        git config --global user.name "harendra1993"
 
     - run: npm run deploy
       env:
