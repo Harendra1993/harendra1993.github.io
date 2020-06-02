@@ -30,7 +30,7 @@ jobs:
         git config --global user.email "harendraindia@gmail.com"
         git config --global user.name "harendra1993"
 
-    - run: npm run deploy
+    - run: npm deploy
       env:
         PA_TOKEN: ${{ secrets.PA_TOKEN }}
         CI: true
