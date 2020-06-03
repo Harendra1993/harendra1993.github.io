@@ -23,6 +23,10 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
+    - run: |
+        git config --global user.email 'harendraindia@gmail.com'
+        git config --global user.name 'harendra1993'
+      
     - run: npm run deploy --if-present
       
       env:
